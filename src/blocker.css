@@ -1,0 +1,63 @@
+/* Align all elements in the body centered. */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* common properties of "banner" divs: clock, blocker, counter */
+div.banner {
+    width: 80%;
+}
+
+.banner div {
+    width: 100%;
+    color: white;
+    text-align-last: center;
+    font-size: 64px;
+    border-radius: 8px;
+    margin: 24px 0;
+}
+
+/* banner "clock" */
+#clock {
+    background-color: orange;
+    transition: color 1s;
+}
+
+#clock:hover {
+    background-color: darkorange;
+}
+
+/* pulsing effect by adding/removing the css class "fade" */
+div#clock.fade {
+    color: #ffffff44;
+}
+
+/* banner "counter" */
+#counter {
+    background-color: blue;
+}
+
+#counter:hover {
+    background-color: darkblue;
+}
+
+/* banner "blocker"
+   The state change green/red is signalled by changing the css class.
+*/
+#blocker {
+    background-color: green;
+}
+
+#blocker:hover {
+    background-color: darkgreen;
+}
+
+.idle {
+    background-color: green;
+}
+
+.running {
+    background-color: red !important;
+}
