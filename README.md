@@ -14,3 +14,7 @@ This repo contains a JavaScript Web App, that I use for demonstration purposes i
    `npm install`
 1. Start the parcel IDE backend by: `npm start` and
 1. navigate your Browser to the URL shown in the log (e.g. `http://localhost:1234`)
+
+
+
+Um den sharedWorker zu testen, würde Ich die Extension LiveServer verwenden und kein parcel.
